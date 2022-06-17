@@ -17,6 +17,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+
         <p> count is: {counter}</p>
         <p>
           <button type="button" onClick={() => dispatch(increment())}>
