@@ -22,7 +22,6 @@ export const PokemonApp = () => {
       <h1>Pokemon App</h1>
       <hr />
       <span>Loading: {!isloading ? "True" : "false"}</span>
-
       {pokemons.map((pokemon) => {
         return (
           <ul>
@@ -30,7 +29,8 @@ export const PokemonApp = () => {
           </ul>
         );
       })}
-
+      // Cuando haces click vuelve a hacer dispatch al thunk para cargar los
+      pokemones de la pagina siguiente
       <button disabled={isloading} onClick={() => dispatch(getPokemons(page))}>
         Next
       </button>
