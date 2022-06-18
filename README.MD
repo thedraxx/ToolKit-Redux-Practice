@@ -21,6 +21,11 @@ redux-toolkit: 1.8.2
 redux-toolkit: 8.0.2
 ```
 
+## 🤍 Versión de Axios 
+```
+Axios: 0.27.2
+```
+
 
 ## 🔮 Futuro del Proyecto
 

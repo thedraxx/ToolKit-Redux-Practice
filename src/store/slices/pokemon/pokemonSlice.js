@@ -10,12 +10,15 @@ export const pokemonSlice = createSlice({
     reducers: {
         //  Cuando los pokemons empiezan a cargar
         startLoadingPokemons: (state, /* action */) => {
-            // Agarramos el state y cambiamos el loading a true
+            // modificamos el state y cambiamos el loading a true
             state.isLoading = true;
         },
         // Cuando ya tenemos los pokemons
         setPokemons: (state, action) => {
-            console.log(action);
+            //Modificamos el state con los pokemons y la pagina actual
+            state.isLoading = false;
+            state.page = action.payload.page;
+            state.pokemons = action.payload.pokemons;
         }
     }
 });
