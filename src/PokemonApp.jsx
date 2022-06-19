@@ -29,8 +29,8 @@ export const PokemonApp = () => {
           </ul>
         );
       })}
-      // Cuando haces click vuelve a hacer dispatch al thunk para cargar los
-      pokemones de la pagina siguiente
+      {/* // Cuando haces click vuelve a hacer dispatch al thunk para cargar los
+      pokemones de la pagina siguiente */}
       <button disabled={isloading} onClick={() => dispatch(getPokemons(page))}>
         Next
       </button>
