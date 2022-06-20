@@ -1,5 +1,5 @@
 
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/toolkit/query/react'
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const todosApi = createApi({
 
